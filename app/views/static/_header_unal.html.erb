@@ -1,0 +1,367 @@
+<div id="service-menu" class="hidden-xs">
+    <div class="indicator"></div>
+    <ul>
+        <li class="sub-item">
+            <a href="http://correo.unal.edu.co" target="_blank">
+                <%= image_tag('services/icnServEmail.png',size: "32x32",border: "0") %>
+                <p>Correo institucional</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.sia.unal.edu.co" target="_blank">
+                <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                <p>Sistema de Información Académica</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.sinab.unal.edu.co" target="_blank">
+                <%= image_tag('services/icnServLibrary.png',size: "32x32",border: "0") %>
+                <p>Bibliotecas</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.humanas.unal.edu.co/nuevo/convocatorias-2013" target="_blank">
+                <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                <p>Convocatorias</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.humanas.unal.edu.co/nuevo/bitacora-blog" target="_blank">
+                <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                <p>Eventos</p>
+            </a>
+        </li class="sub-item">
+        <li>
+            <a href="http://www.humanas.unal.edu.co/sap/" target="_blank">
+                <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                <p>Servicio de Atención Psicológica SAP</p>
+            </a>
+        </li class="sub-item">
+        <li>
+            <a href="http://www.humanas.unal.edu.co/bienestar/egresados/" target="_blank">
+                <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                <p>Egresados</p>
+            </a>
+        </li class="sub-item">
+        <li>
+            <a href="http://www.humanas.unal.edu.co/nuevo/facultad/secretaria-academica/actas" target="_blank">
+                <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                <p>Actas</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.humanas.unal.edu.co/contratacion/" target="_blank">
+                <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                <p>Contratación</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.humanas.unal.edu.co/nuevo/" >
+                <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                <p>Inicio</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.humanas.unal.edu.co/nuevo/facultad/directorio" target="_blank">
+                <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                <p>Directorio</p>
+            </a>
+        </li>
+        <li class="sub-item">
+            <a href="http://www.humanas.unal.edu.co/peec/" target="_blank" >
+                <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                <p>Educación continuada</p>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+<header>
+    <div class="headerUN clearfix">
+        <div class="escudo">
+            <div class="fondo">
+                <%= image_tag('header_unal/sealBck.png',alt: "Fondo Escudo",border: "0",title:"Fondo Escudo", class:"hidden-xs") %>
+
+                <a href="<%= root_path %>" class="logo">
+                    <%= image_tag('header_unal/escudoUnal.svg',alt: "Escudo de la Universidad Nacional de Colombia",border: "0",title:"Escudo de la Universidad Nacional de Colombia", class:"img-responsive") %>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-header">
+    			<button class="navbar-toggle" data-target="#menu-FCH" data-toggle="collapse" aria-controls="menu-FCH" aria-expanded="false" type="button">
+    				<span class="icon-bar"></span>
+    			</button>
+    		</div>
+        <div class="redes-sociales hidden-xs">
+            <ul>
+                <li class="social">
+                    <a target="_blank" href="https://www.youtube.com/user/faccienciashumanas" class="youtube"></a>
+                </li>
+                <li class="social">
+                    <a target="_blank" href="https://twitter.com/humanasunal" class="twitter"></a>
+                </li>
+                <li class="social">
+                    <a target="_blank" href="https://www.facebook.com/humanasunal" class="facebook"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-FCH" class="navbar-collapse navigation collapse">
+            <div class="menu-superior clearfix">
+                <div class="url-humanas">
+                    <a href="http://www.humanas.unal.edu.co/2017/index.php" class="url-site">humanas.bogota.unal.edu.co</a>
+                </div>
+                <div class="buscador">
+                    <gcse:searchbox-only resultsurl="http://unal.edu.co/resultados-de-la-busqueda/"></gcse:searchbox-only>
+                </div>
+            </div>
+            <div class="escudo_colombia hidden-xs">
+                <%= image_tag('header_unal/escudoColombia.png',size: "62x62",border: "0",alt:"Escudo de la República de Colombia", title:"Escudo de la República de Colombia") %>
+            </div>
+            <ul class="items-menu clearfix">
+                <li class="item">
+                    <a href="http://www.humanas.unal.edu.co/2017/index.php" class="item-name">Inicio</a>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Facultad <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/2017/index.php/facultad/la-facultad/historia">La Facultad</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/2017/index.php/facultad/directivas/decanatura">Directivas</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/2017/facultad/internacionalizacion/quienes-somos">Internacionalización</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/2017/index.php/facultad/consejos-y-comites/consejo-de-facultad">Consejos y Comités</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Apoyo a la Gestión</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Mejoramiento Contínuo</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Representación Estudiantil</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Representación Profesoral</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Estudiar en la Facultad <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="#">Pregrados</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Especializaciones</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Maestrías</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Doctorados</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Educación Contínua</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Unidades Académicas <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="#">Departamentos</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Escuelas</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Centros</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Institutos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Bienestar <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="#">Sobre Bienestar FCH</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Nodo de Encuentro</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Egresados</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Servicios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Extensión <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="#">Cursos</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Servicio de Atención Psicológica</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Programa de Extensión y Educación Contínua</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Modalidades</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Productos Académicos</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Prácticas y Pasantías</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Normatividad</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Investigación <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="#">Grupos de Investigación</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Laboratorios</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Normatividad</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Enlaces de interés</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="#" class="item-name">Contacto</a>
+                </li>
+                <li class="item has_submenu visible-xs">
+                    <div class="item-name">Servicios <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <ul id="services">
+                        <li class="sub-item">
+                            <a href="http://correo.unal.edu.co" target="_blank">
+                                <%= image_tag('services/icnServEmail.png',size: "32x32",border: "0") %>
+                                <p>Correo institucional</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.sia.unal.edu.co" target="_blank">
+                              <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                                <p>Sistema de Información Académica</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.sinab.unal.edu.co" target="_blank">
+                              <%= image_tag('services/icnServLibrary.png',size: "32x32",border: "0") %>
+                                <p>Bibliotecas</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/nuevo/convocatorias-2013" target="_blank">
+                              <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                                <p>Convocatorias</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/nuevo/bitacora-blog" target="_blank">
+                              <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                                <p>Eventos</p>
+                            </a>
+                        </li class="sub-item">
+                        <li>
+                            <a href="http://www.humanas.unal.edu.co/sap/" target="_blank">
+                              <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                                <p>Servicio de Atención Psicológica SAP</p>
+                            </a>
+                        </li class="sub-item">
+                        <li>
+                            <a href="http://www.humanas.unal.edu.co/bienestar/egresados/" target="_blank">
+                              <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                                <p>Egresados</p>
+                            </a>
+                        </li class="sub-item">
+                        <li>
+                            <a href="http://www.humanas.unal.edu.co/nuevo/facultad/secretaria-academica/actas" target="_blank">
+                              <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                                <p>Actas</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/contratacion/" target="_blank">
+                              <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                                <p>Contratación</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/nuevo/" >
+                              <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                                <p>Inicio</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/nuevo/facultad/directorio" target="_blank">
+                              <%= image_tag('services/icnServCall.png',size: "32x32",border: "0") %>
+                                <p>Directorio</p>
+                            </a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.humanas.unal.edu.co/peec/" target="_blank" >
+                              <%= image_tag('services/icnServSia.png',size: "32x32",border: "0") %>
+                                <p>Educación continuada</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item has_submenu">
+                    <a href="#" class="item-name">Sedes <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="item_submenu">
+                        <li class="sub-item">
+                            <a href="http://www.imani.unal.edu.co/">Amazonía</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://bogota.unal.edu.co/">Bogotá</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://caribe.unal.edu.co/">Caribe</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.manizales.unal.edu.co/">Manizales</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://medellin.unal.edu.co/">Medellín</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://orinoquia.unal.edu.co/">Orinoquía</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.palmira.unal.edu.co/">Palmira</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="http://www.tumaco-pacifico.unal.edu.co/">Tumaco</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

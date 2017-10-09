@@ -1,0 +1,25 @@
+<div id="wrapper">
+	<div id="sidebar-wrapper">
+		<div id="sidebar-header">
+			<%=image_tag("image.jpg", height: '150', width: '200') %>
+		</div>
+		<ul class="sidebar-nav">
+			<li><%= link_to root_path do %>
+				<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				<div class="title">Home</div><% end %>
+			</li>
+			<li><%= link_to information_path do %>
+				<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				<div class="title">Information</div><% end %>
+			</li>
+
+			<li><%= link_to map_path do %>
+				<span class="glyphicon glyphicon-map" aria-hidden="true"></span>
+				<div class="title">Map</div><% end %>
+			</li>
+
+		</ul>
+	</div>
+
+</div>
+<div class="clearfix"></div>
