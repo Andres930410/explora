@@ -5,6 +5,8 @@ function initMap() {
         zoom: 15
       });
       var texts = []
+      var markers = []
+
       $.get("/buildings", function(data, status){
         var infowindow = new google.maps.InfoWindow();
 
@@ -14,19 +16,22 @@ function initMap() {
           texts[i] = '<h4>Name: </h4>' + data[i].name +
             '<h4>Number: </h4>' + parseInt(data[i].number);
 
-          var marker  = new google.maps.Marker({
+          markers[i] = new google.maps.Marker({
         		map: map,
         		position: {lat: k, lng: k1},
             title: data[i].name,
           });
 
-          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          google.maps.event.addListener(markers[i], 'click', (function(marker, i) {
       			return function() {
       				infowindow.setContent(texts[i]) ;
-      				infowindow.open(map, marker);
+      				infowindow.open(map, markers[i]);
       			}
-      		}) (marker, i));
+      		}) (markers[i], i));
 
         }
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
       });
 }

@@ -126,5 +126,22 @@
 
 
 #contenedor_info{
-	min-height: 600px;
+	min-height: 750px;
+}
+
+.pre-scrollable {
+    max-height: 750px;
+    overflow-y: scroll;
+}
+
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+.collage{
+  display: block;
+  max-width: 200px;
+  height: 150px;
 }

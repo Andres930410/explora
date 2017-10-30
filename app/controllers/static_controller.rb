@@ -20,4 +20,19 @@ class StaticController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def entertaiment
+  end
+
+  def physical
+    render 'physical'
+  end
+
+  def cultural
+    render 'cultural'
+  end
+
+  def research
+  end
+
 end

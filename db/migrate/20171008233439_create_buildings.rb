@@ -8,7 +8,9 @@ class CreateBuildings < ActiveRecord::Migration[5.1]
       t.decimal :lat, null: false
       t.decimal :lng, null: false
       t.string :history, null: false
-      t.string :url, null: false
+      t.string :url, null: true
+      t.string :url_one, null: true
+      t.string :url_two, null: true
 
       t.timestamps
     end

@@ -23,7 +23,9 @@ ActiveRecord::Schema.define(version: 20171008233439) do
     t.decimal "lat", null: false
     t.decimal "lng", null: false
     t.string "history", null: false
-    t.string "url", null: false
+    t.string "url"
+    t.string "url_one"
+    t.string "url_two"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

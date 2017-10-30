@@ -1,4 +1,6 @@
 /*Buscador*/
+//= require jquery
+
 (function() {
     var cx = '008572255874373046644:chip1p1uf-4';
     var gcse = document.createElement('script');
