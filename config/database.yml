@@ -82,4 +82,4 @@ production:
   <<: *default
   database: explora_production
   username: explora
-  password: <%= ENV['EXPLORA_DATABASE_PASSWORD'] %>
+  password: 123456789
