@@ -7,7 +7,7 @@ function initMap() {
       var texts = []
       var markers = []
 
-      $.get("/buildings", function(data, status){
+      $.get("/explora/buildings", function(data, status){
         var infowindow = new google.maps.InfoWindow();
 
         for (i = 0; i < data.length; i++) {
